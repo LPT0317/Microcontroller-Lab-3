@@ -26,6 +26,34 @@ uint16_t offSEG7[10] = {0x0040, 0x0079, 0x0024, 0x0030, 0x0019,
 //LED 7SEG buffer
 int SEG_buffer[4] = {0};
 /* Function -----*/
+/* LED */
+//Turn on LED have "color"
+void LED_on_road1(int color) {
+  if(checkIndex(color, NO_COLOR)) {
+	HAL_GPIO_WritePin(GPIOA, LED[color], 0);
+	for(int i = 0; i < NO_COLOR; i++) {
+	  if(i != color) {
+	  HAL_GPIO_WritePin(GPIOA, LED[i], 1);
+	  }
+	}
+  }
+}
+void LED_on_road2(int color) {
+  if(checkIndex(color, NO_COLOR)) {
+	HAL_GPIO_WritePin(GPIOA, LED[NO_COLOR + color], 0);
+	for(int i = 0; i < NO_COLOR; i++) {
+	  if(i != color) {
+	  HAL_GPIO_WritePin(GPIOA, LED[NO_COLOR + i], 1);
+	  }
+	}
+  }
+}
+//Turn off all LED
+void LED_off(void) {
+  for(int i = 0; i < NO_LED; i++) {
+    HAL_GPIO_WritePin(GPIOA, LED[i], 1);
+  }
+}
 /* EN */
 //turn on EN[index] pin
 void EN_on(int index) {

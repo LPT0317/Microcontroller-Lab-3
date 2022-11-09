@@ -13,7 +13,16 @@
 #include "stdint.h"
 #include "global.h"
 
+/* Init -----*/
+extern int SEG_buffer[4];
+
 /* Function -----*/
+/* LED */
+//Turn on LED have "color"
+void LED_on_road1(int color);
+void LED_on_road2(int color);
+//Turn off all LED
+void LED_off(void);
 /* EN */
 //turn on EN[index] pin
 void EN_on(int index);

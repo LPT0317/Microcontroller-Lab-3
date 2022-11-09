@@ -10,6 +10,10 @@
 /* Init -----*/
 int time_road1 = 0;
 int time_road2 = 0;
+int state = 0;
+int time_red = 5;
+int time_yellow = 2;
+int time_green = 3;
 
 /* Function -----*/
 //Check index (0 <= Index < max)

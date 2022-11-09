@@ -5,7 +5,11 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../Core/Src/fsm_automatic.c \
+../Core/Src/fsm_display.c \
+../Core/Src/fsm_manual.c \
 ../Core/Src/global.c \
+../Core/Src/input_reading.c \
 ../Core/Src/main.c \
 ../Core/Src/output_display.c \
 ../Core/Src/stm32f1xx_hal_msp.c \
@@ -16,7 +20,11 @@ C_SRCS += \
 ../Core/Src/timer_interrupt.c 
 
 OBJS += \
+./Core/Src/fsm_automatic.o \
+./Core/Src/fsm_display.o \
+./Core/Src/fsm_manual.o \
 ./Core/Src/global.o \
+./Core/Src/input_reading.o \
 ./Core/Src/main.o \
 ./Core/Src/output_display.o \
 ./Core/Src/stm32f1xx_hal_msp.o \
@@ -27,7 +35,11 @@ OBJS += \
 ./Core/Src/timer_interrupt.o 
 
 C_DEPS += \
+./Core/Src/fsm_automatic.d \
+./Core/Src/fsm_display.d \
+./Core/Src/fsm_manual.d \
 ./Core/Src/global.d \
+./Core/Src/input_reading.d \
 ./Core/Src/main.d \
 ./Core/Src/output_display.d \
 ./Core/Src/stm32f1xx_hal_msp.d \

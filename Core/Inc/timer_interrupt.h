@@ -11,6 +11,16 @@
 /* Includes -----*/
 #include "global.h"
 
+/* Define -----*/
+//Timer index description
+#define EN_TIMER 0
+#define ROAD1_TIMER 1
+#define ROAD2_TIMER 2
+#define CLOCK_TIMER1 3
+#define CLOCK_TIMER2 4
+#define MODE1_TIMER 5
+#define BLINK_TIMER 6
+
 /* Function -----*/
 //Set time on timer[index] = duration
 void setTimer(int duration, int index);
