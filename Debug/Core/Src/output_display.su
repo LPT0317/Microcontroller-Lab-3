@@ -1,0 +1,3 @@
+output_display.c:31:6:EN_on	24	static
+output_display.c:43:6:updateBuffer	4	static
+output_display.c:51:6:display7SEG	16	static
