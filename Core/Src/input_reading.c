@@ -5,7 +5,6 @@
  *      Author: lephu
  */
 
-/* Include -----*/
 #include "input_reading.h"
 
 /* Define -----*/

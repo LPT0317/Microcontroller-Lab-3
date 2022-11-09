@@ -33,7 +33,7 @@ void LED_on_road1(int color) {
 	HAL_GPIO_WritePin(GPIOA, LED[color], 0);
 	for(int i = 0; i < NO_COLOR; i++) {
 	  if(i != color) {
-	  HAL_GPIO_WritePin(GPIOA, LED[i], 1);
+	    HAL_GPIO_WritePin(GPIOA, LED[i], 1);
 	  }
 	}
   }
@@ -43,7 +43,7 @@ void LED_on_road2(int color) {
 	HAL_GPIO_WritePin(GPIOA, LED[NO_COLOR + color], 0);
 	for(int i = 0; i < NO_COLOR; i++) {
 	  if(i != color) {
-	  HAL_GPIO_WritePin(GPIOA, LED[NO_COLOR + i], 1);
+	    HAL_GPIO_WritePin(GPIOA, LED[NO_COLOR + i], 1);
 	  }
 	}
   }

@@ -61,6 +61,7 @@ void fsm_manual(void) {
 	}
 	if(isButtonPressed(SET_BUTTON) == 1) {
 	  time_red = time_road2;
+	  setTimer(RETURN_MODE1, MODE1_TIMER);
 	}
 	if(isTimerOut(MODE1_TIMER) == 1) {
 	  restartDisplay();
@@ -82,6 +83,7 @@ void fsm_manual(void) {
 	}
 	if(isButtonPressed(SET_BUTTON) == 1) {
 	  time_yellow = time_road2;
+	  setTimer(RETURN_MODE1, MODE1_TIMER);
 	}
 	if(isTimerOut(MODE1_TIMER) == 1) {
 	  restartDisplay();
@@ -101,6 +103,7 @@ void fsm_manual(void) {
 	}
 	if(isButtonPressed(SET_BUTTON) == 1) {
 	  time_green = time_road2;
+	  setTimer(RETURN_MODE1, MODE1_TIMER);
 	}
 	if(isTimerOut(MODE1_TIMER) == 1) {
 	  restartDisplay();
